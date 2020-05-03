@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<style>
+		
+		.container-fluid{
+					height: 100vh;
+					width: 100%;
+
+		}
+		.row{
+			height: 80%;
+			width: 70%;
+			margin-top: 15%;
+			box-shadow: 2px 2px 8px	2px	white;
+		}
+		h1{
+			text-shadow: 4px  4px white;
+		}
+		input{
+			text-shadow: 2px  2px white;
+			border: 2px solid blue;
+		}
+		h2{
+			text-shadow: 2px  2px pink;
+		}
+	</style>
+
+</head>
+<body>
+	<section>
+		<div class="container-fluid bg-primary text-center font-weight-bold">
+			<br><br>
+			<div class="row m-auto bg-secondary">
+				<div class="col-12 md-12">
+					<h1 class="display-3 text-danger font-weight-bold">KHABAI TECH</h1><br>
+					<h2 class="text-dark text-center display-5 font-weight-bold">A Message You Would Like To Pass</h1><br>
+					<input type="text" name="name" class="form-control" id="a11">
+					<br><br>
+					<button class="btn btn-lg btn-success btn-outline-warning"  id="a3">Submit</button><br><br>
+					<h3 class="text-dark text-center display-6 font-weight-bold">Last Message Delivered</h3><br>
+					<h1 class="display-6 text-success font-weight-bold" id="a1"></h1>
+				</div>
+		</div>
+			
+		</div>
+		
+	</section>
+
+	<script>
+		
+		
+
+		document.getElementById("a3").addEventListener("click",function(){
+
+			var	input=document.getElementById("a11").value;
+
+
+		document.getElementById("a1").innerHTML=input;
+
+		document.getElementById("a11").value="";
+		  
+		document.getElementById("a11").style.background="lightblue";
+});
+
+		
+
+		
+
+
+	</script>
+
+
+
+</body>
+</html>
